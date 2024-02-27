@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <input id="display" readonly />
+
+      <div class="buttons-container">
+        <button onclick="clearDisplay()" id="operators-top">AC</button>
+        <button onclick="action('/')" id="operators-top">/</button>
+        <button onclick="action('%')" id="operators-top">%</button>
+        <button onclick="action('+')" id="operators">+</button>
+        <button onclick="action('7')">7</button>
+        <button onclick="action('8')">8</button>
+        <button onclick="action('9')">9</button>
+        <button onclick="action('*')" id="operators">*</button>
+        <button onclick="action('4')">4</button>
+        <button onclick="action('5')">5</button>
+        <button onclick="action('6')">6</button>
+        <button onclick="action('-')" id="operators">-</button>
+        <button onclick="action('1')">1</button>
+        <button onclick="action('2')">2</button>
+        <button onclick="action('3')">3</button>
+        <button onclick="action('.')" id="operators">.</button>
+        <button onclick="action('0')" id="wide-0">0</button>
+
+        <button onclick="calculate()" id="operators">=</button>
+      </div>
+    </div>
+  </body>
+</html>
