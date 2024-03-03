@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  background: #667db6;
+  background: -webkit-linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  );
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+.title-bar {
+  height: 30px;
+  background-color: #eaeaea;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.title-bar div {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.close {
+  background-color: #ff5f57;
+}
+
+.minimize {
+  background-color: #ffbd2e;
+}
+
+.maximize {
+  background-color: #28ca42;
+}
+
+.photobooth {
+  background: #000000d7;
+  max-width: 70rem;
+  margin: 5rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 7px 7px 0px 0px #000000b0;
+}
+
+.photobooth:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+}
+
+.player {
+  display: none;
+}
+
+.controls {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button {
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
+  padding: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.controls button:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.err-msg {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.btn-click {
+  display: none;
+}
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: #000;
+  border-radius: 5px;
+}
+
+.strip a:nth-child(5n + 1) img {
+  transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+  transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+  transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+  transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+  transform: rotate(12deg);
+}

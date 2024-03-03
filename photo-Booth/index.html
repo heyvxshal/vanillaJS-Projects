@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Photo Booth</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="photobooth">
+      <div class="title-bar">
+        <div class="close"></div>
+        <div class="minimize"></div>
+        <div class="maximize"></div>
+      </div>
+      <div class="controls">
+        <button class="btn-click" onClick="takePhoto()">Take Photo</button>
+      </div>
+
+      <canvas class="photo"></canvas>
+      <video class="player"></video>
+      <div class="strip"></div>
+    </div>
+
+    <audio class="snap" src="./snap.mp3" hidden></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
