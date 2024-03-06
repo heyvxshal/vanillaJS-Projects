@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background: #0575e6;
+  background: -webkit-linear-gradient(to right, #0575e6, #00f260);
+  background: linear-gradient(to right, #0575e6, #00f260);
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 7px 7px 0px 0px #0000008e;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  border-radius: 1rem;
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 1.6rem;
+  background: #f7f7f7;
+  outline: 0;
+}
+
+textarea {
+  height: 20rem;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+.voiceinator button {
+  background: #0576e691;
+  border: 0;
+  width: 49%;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  border-bottom: 5px solid #00f261c8;
+  cursor: pointer;
+  position: relative;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
